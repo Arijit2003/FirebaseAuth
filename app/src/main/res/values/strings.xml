@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FirebaseAuthSignUp</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="contactNo">Contact No</string>
+    <string name="email">Email</string>
+    <string name="save">SAVE</string>
+</resources>
