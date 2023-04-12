@@ -5,4 +5,7 @@
     <string name="contactNo">Contact No</string>
     <string name="email">Email</string>
     <string name="save">SAVE</string>
+    <string name="alreadyRegistered">Already Registered?</string>
+    <string name="LOGIN">LogIn Here</string>
+    <string name="userId">User ID</string>
 </resources>

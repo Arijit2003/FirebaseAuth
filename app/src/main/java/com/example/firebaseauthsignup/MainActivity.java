@@ -3,10 +3,12 @@ package com.example.firebaseauthsignup;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     Button btnSave;
     private FirebaseAuth mAuth;
     ProgressBar progressBar;
+
+    private TextView alreadyRegistered;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        alreadyRegistered.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,LogIn.class));
+                emailTIET.setText("");
+                passwordTIET.setText("");
+            }
+        });
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         userImage=findViewById(R.id.userImage);
         btnSave=findViewById(R.id.btnSave);
         progressBar=findViewById(R.id.progressBar);
+        alreadyRegistered=findViewById(R.id.alreadyRegistered);
     }
     private void signUpInFirebaseAuth(){
         progressBar.setVisibility(View.VISIBLE);
