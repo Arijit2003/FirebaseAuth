@@ -54,6 +54,7 @@
             android:layout_marginBottom="16dp"
             android:hint="@string/password"
             app:passwordToggleEnabled="true"
+
             app:hintTextColor="#000">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password"
@@ -63,6 +64,16 @@
                 android:inputType="textPassword"
                 />
         </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:foreground="?selectableItemBackground"/>
 
 
         <Button

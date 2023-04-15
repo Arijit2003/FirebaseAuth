@@ -14,11 +14,16 @@
         android:theme="@style/Theme.FirebaseAuthSignUp"
         tools:targetApi="31">
         <activity
+            android:name=".ReceivedOTP"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard"
             android:exported="false" />
         <activity
             android:name=".LogIn"
             android:exported="false" />
+        <activity android:name=".MobileVerification"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

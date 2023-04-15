@@ -8,4 +8,8 @@
     <string name="alreadyRegistered">Already Registered?</string>
     <string name="LOGIN">LogIn Here</string>
     <string name="userId">User ID</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="otp_verification">OTP VERIFICATION</string>
+    <string name="send_otp">SEND OTP</string>
+    <string name="submit_otp">SUBMIT OTP</string>
 </resources>

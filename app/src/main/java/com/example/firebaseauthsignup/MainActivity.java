@@ -22,6 +22,7 @@ import java.util.Objects;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
+    TextView forgetPassword;
     TextInputEditText emailTIET;
     TextInputEditText passwordTIET;
     CircleImageView userImage;
@@ -54,6 +55,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        forgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MobileVerification.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
@@ -64,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         btnSave=findViewById(R.id.btnSave);
         progressBar=findViewById(R.id.progressBar);
         alreadyRegistered=findViewById(R.id.alreadyRegistered);
+        forgetPassword=findViewById(R.id.forgetPassword);
     }
     private void signUpInFirebaseAuth(){
         progressBar.setVisibility(View.VISIBLE);
