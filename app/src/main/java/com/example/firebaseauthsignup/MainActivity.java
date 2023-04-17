@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("email",currentUser.getEmail());
             intent.putExtra("userID",currentUser.getUid());
             startActivity(intent);
+            finish();
         }
     }
 
@@ -98,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,MobileVerification.class);
                 startActivity(intent);
+
             }
         });
 
