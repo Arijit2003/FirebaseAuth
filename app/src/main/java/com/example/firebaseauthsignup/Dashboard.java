@@ -35,4 +35,5 @@ public class Dashboard extends AppCompatActivity {
         userIdDashboardTV=findViewById(R.id.userIdDashboardTV);
         logOutBtn=findViewById(R.id.logOutBtn);
     }
+
 }
